@@ -391,6 +391,9 @@ namespace GMapsDemo
 			// aapt resource value: 0x7f05000f
 			public const int common_signin_button_text_long = 2131034127;
 			
+			// aapt resource value: 0x7f050012
+			public const int google_maps_api_key = 2131034130;
+			
 			static String()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
