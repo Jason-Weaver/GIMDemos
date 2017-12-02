@@ -17,24 +17,29 @@ namespace XAMLDemo
         private int _range;
         private List<string> _tags;
         private readonly DateTime _dateTimeStamp;
-        */
 
-        public Cache(string textMessage, bool visibility/*, Coordinate coordinate, int Range, DateTime dateTimeStamp*/)
-            : this("Unknown", textMessage, visibility/*, "Unknown", coordinate, range, List<sting>(), dateTimeStamp*/) { }
+        public Cache(string textMessage, bool visibility, Coordinate coordinate, int Range, DateTime dateTimeStamp)
+            : this("Unknown", textMessage, visibility, "Unknown", coordinate, range, List<sting>(), dateTimeStamp) { }
 
-        public Cache(string title, string textMessage, bool visibility/*, string author, Coordinate coordinate, 
-                     int range, List<string> tags, DateTime dateTimeStamp*/)
+        public Cache(string title, string textMessage, bool visibility, string author, Coordinate coordinate, 
+                     int range, List<string> tags, DateTime dateTimeStamp)
         {
             Title = title;
             _textMessage = textMessage;
             _visibility = visibility;
-            /*
             string Author = author;
             _coordinate = coordinate;
             Range = range;
             Tags = tags;
             _dateTimeStamp = dateTimeStamp;
-            */
+        }
+		*/
+		
+		public Cache (string title, string textMessage, bool visibility)
+        {
+            Title = title;
+            _textMessage = textMessage;
+            _visibility = visibility;
         }
 
         public string Title

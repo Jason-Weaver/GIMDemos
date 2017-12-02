@@ -9,6 +9,8 @@ namespace XAMLDemo
     public class CacheListViewModel
     {
         public List<Cache> Caches;
+		public string _text;
+
 
         public CacheListViewModel()
         {
@@ -19,7 +21,14 @@ namespace XAMLDemo
                 new Cache("Line 3", "Of meadow-flowers and butterflies", false),
                 new Cache("Line 4", "In summers that have been;", true)
             };
+			
+			Text = "Welcome to Xamarin!!!";
         }
 
+        public string Text
+        {
+            get { return _text; }
+            set { _text = value; }
+        }
     }
 }

@@ -5,17 +5,16 @@
              x:Class="XAMLDemo.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="{Binding _text}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <ListView ItemsSource="{Binding Caches}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Title}" Header="Cache:" />
-                        <TextCell Text="{Binding TextMessage}" Header="Message" />
-                        <TextCell Text="{Binding Visibility}" Header="Visibility" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+            <ListView Margin="8" Height="400" Width="650">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Title" Width="Auto"/>
+                        <GridViewColumn Header="Message" Width="400"/>
+                    </GridView>
+                </ListView.View>
             </ListView>
         </StackLayout>
     </ContentPage.Content>
